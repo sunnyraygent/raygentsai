@@ -1,0 +1,15 @@
+{
+  "name": "raygents-ai-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Raygents AI \u2014 voice agents and custom CRMs for contractors",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "vendor": "node scripts/vendor.mjs"
+  },
+  "dependencies": {
+    "lenis": "^1.3.26",
+    "motion": "^14.1.0"
+  }
+}
