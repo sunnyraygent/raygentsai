@@ -2,6 +2,10 @@ node_modules/
 dist/
 .DS_Store
 artifacts/
-sites/
+.claude/
 
-.vercel/
+# Secrets and separate historical documents
+.env
+.env.*
+ray-agents-original.html
+raygents-ai-market-pricing-*.html

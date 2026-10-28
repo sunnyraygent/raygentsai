@@ -1,6 +1,6 @@
 # Raygents AI — Agency website
 
-Web de una agencia de IA para constructoras, empresas de HVAC, cubiertas comerciales y otros contratistas en Estados Unidos. Las dos ofertas principales son agentes de voz para recepción y citas, y CRM personalizados con IA. Marca elegida por el usuario: **Raygents AI**. La disponibilidad legal de la marca y la compra del dominio propio siguen pendientes.
+Web de una agencia de IA para constructoras, empresas de HVAC, cubiertas comerciales y otros contratistas en Estados Unidos. La oferta se centra en agentes de voz que atienden llamadas y reservan o modifican citas, compatibles con el CRM y calendario existentes mediante integraciones verificadas. Marca elegida por el usuario: **Raygents AI**. La disponibilidad legal de la marca y la compra del dominio propio siguen pendientes.
 
 ## Abrir la web
 
@@ -25,12 +25,12 @@ La vista previa sirve en `http://localhost:4173`. También puedes usar `npm inst
 - Barra de progreso, transiciones, animaciones de entrada y microinteracciones.
 - Control para pausar animaciones; respeto a movimiento reducido y transparencia reducida.
 - Renderizado 3D detenido fuera de pantalla o al ocultar la pestaña, resolución acotada y alternativa SVG si WebGL no está disponible.
-- Presentación de agentes de voz y CRM a medida.
+- Presentación de agentes de voz para atención y reservas, conectados al CRM existente.
 - Tres conversaciones ilustrativas: servicio HVAC, cambio de visita de obra e inspección de una cubierta comercial.
 - Audio opcional generado por el sintetizador del navegador. No es un agente real ni una demostración de calidad de un proveedor de voz.
-- CRM de ejemplo con oportunidades, contactos de propiedades, visitas y seguimiento de presupuestos.
+- Recorrido ilustrativo de integración: agente → calendario → CRM existente. No se ofrece ni se simula un CRM propio.
 - Casos de uso para HVAC, cubiertas comerciales, construcción y otros oficios.
-- Proceso de trabajo, FAQ y formulario con selección de sector y validación.
+- Proceso de trabajo, FAQ y formulario con selección de sector, configuración del agente, CRM actual opcional y validación.
 - Diseño adaptable a móvil, navegación por teclado y preferencias de movimiento reducido.
 
 ## Formulario y publicación
@@ -81,21 +81,16 @@ pnpm build
 - `docs/VERIFICATION.md`: comprobaciones y limitaciones.
 - `ray-agents-original.html`: copia intacta de la web anterior.
 
-Una versión anterior bajo la marca Avelqia se publicó como **Site privado para el propietario**:
+## Publicación · GitHub Pages
 
-https://avelqia-studio.mescuu.chatgpt.site
+La web se publica con GitHub Pages mediante `.github/workflows/pages.yml`:
 
-La publicación fue confirmada por Sites con estado `succeeded`. No se ha abierto el sitio al público, contratado servicios de pago ni comprado dominios.
+1. Sube el repositorio a GitHub.
+2. En **Settings → Pages → Build and deployment**, elige **GitHub Actions** como fuente.
+3. Cada push a `main` ejecuta `node scripts/build.mjs` y publica `dist/`.
 
-La identidad del Site está guardada en `.openai/hosting.json`; reutilízala para futuras publicaciones. El checkout con la fuente sincronizada está en `sites/avelqia/`, con su propio manifiesto y repositorio. Al editar la fuente principal, ejecuta el build y sincroniza `dist/` en ese checkout antes de publicar la nueva versión.
+El build sustituye `%SITE_URL%` (URL canónica, Open Graph, datos estructurados, `robots.txt` y `sitemap.xml`) por la URL que GitHub Pages asigna al sitio. Para un build local con URL real: `SITE_URL=https://tu-dominio node scripts/build.mjs`.
 
-## Vercel — publicación de producción
+## Enfoque comercial actual · 28 de octubre de 2026
 
-La versión Raygents AI / Deep Current se publica en **https://raygents.vercel.app**.
-
-- Proyecto: `raygents`, cuenta `mescus-projects`.
-- Deployment: `dpl_FseZKZu59fQCec5tdDRNHg7kfiEy` (estado `READY`).
-- Se publicó el contenido estático de `dist/` mediante el plugin de Vercel.
-- `vercel.json` configura el build local/remoto y la carpeta de salida para futuras publicaciones por CLI; `.vercel/project.json` conserva el vínculo local con el proyecto correcto.
-- La publicación no activa un agente de voz de producción ni cambia el formulario de demostración.
-- El Site privado anterior sigue disponible de forma independiente.
+La web ofrece únicamente agentes de IA para atender llamadas y reservar citas para contratistas. El CRM se presenta como una herramienta existente del cliente que el agente puede conectar, previa comprobación de compatibilidad. Se han retirado la oferta de CRM a medida, su demo y las opciones de contratación relacionadas. El análisis de precios anterior y los documentos de diseño en `docs/` son registros históricos, no el catálogo actual.

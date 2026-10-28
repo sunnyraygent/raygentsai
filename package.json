@@ -2,7 +2,7 @@
   "name": "raygents-ai-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Raygents AI \u2014 voice agents and custom CRMs for contractors",
+  "description": "Raygents AI — AI booking agents for contractors, connected to existing CRMs",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
