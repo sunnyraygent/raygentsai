@@ -1,0 +1,225 @@
+/* Raygents: clearer booking proposition and a direct path to a conversation. */
+:root { --focus-ring: #5ba7e5; }
+html { scroll-padding-top: 105px; }
+html.motion-paused { scroll-behavior: auto; }
+body:has(dialog[open]) { overflow: hidden; }
+a, button, input, select, textarea, summary { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 5px; }
+.button, .text-link, .hero-watch { text-decoration: none; }
+.hero h1 { font-size: clamp(64px, 6.65vw, 104px); letter-spacing: -.055em; line-height: 1.04; }
+.hero-description { color: #b7c6d4; font-size: 17px; line-height: 1.75; max-width: 510px; }
+.hero-contact { display: flex; align-items: center; gap: 14px; margin-top: 22px; font-size: 12px; line-height: 1.6; }
+.hero-contact a { color: #d2e6f5; font-variant-numeric: tabular-nums; text-decoration: none; }
+.hero-contact a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.hero-contact span { color: #91a8bb; }
+.hero-specialties { margin-top: 30px; }
+.hero-eyebrow { color: #b7c6d4; }
+.hero-watch { min-height: 44px; }
+.hero-bottom { letter-spacing: .08em; }
+.hero-bottom a { min-height: 44px; }
+.flow-story { height: 230svh; }
+.flow-copy > p, .experience-copy > p { color: #b7c6d4; }
+.chapter strong { color: #d8e4ee; }
+.chapter small { color: #9aafc0; }
+.chapter.active small { color: #c1d5e5; }
+.ticket-date > b { font-size: 29px; letter-spacing: -1px; }
+.section-heading .eyebrow, .sectors-top .eyebrow, .approach-heading .eyebrow, .faq-grid .eyebrow { font-size: 11px; letter-spacing: .13em; }
+.section-heading p, .solution-card p, .approach-heading > p { font-size: 15px; line-height: 1.8; }
+.solution-card { height: auto; min-height: 610px; padding-bottom: 22px; }
+.solution-card .text-link { min-height: 44px; margin-top: 8px; }
+.integration-card-visual { margin-top: 24px; }
+.more-strip .round-button, .dialog-close { min-width: 44px; min-height: 44px; }
+.experience-copy h2 { max-width: 620px; }
+.experience-features > div > span { font-size: 13px; color: #a8bbcd; }
+.experience-features strong { font-size: 14px; color: #d8e5ef; }
+.conversation-card { padding: 28px; }
+.conversation-identity { padding: 22px 0; }
+.conversation-identity p { font-size: 12px; line-height: 1.6; color: #a6b9ca; }
+.segmented-control button { min-height: 44px; font-size: 11px; }
+.transcript { height: 345px; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #6b8ca6 #172c40; padding-right: 9px; margin-top: 21px; }
+.message { font-size: 12px; line-height: 1.7; max-width: 92%; }
+.message-label { font-size: 9px; letter-spacing: .08em; }
+.demo-result { font-size: 11px; line-height: 1.6; align-items: flex-start; }
+.demo-result .icon { flex-shrink: 0; margin-top: 2px; }
+.sample-button { font-size: 11px; min-height: 44px; flex-shrink: 0; }
+.demo-bottom { flex-wrap: wrap; gap: 7px 16px; }
+.demo-bottom > span { font-size: 10px; color: #9cafc0; }
+.audio-status { line-height: 1.6; }
+.integration-cta .text-link { min-height: 44px; }
+.sector-controls button { min-height: 44px; }
+.sector-story-copy > p { font-size: 14px; line-height: 1.85; }
+.faq-list summary { min-height: 64px; }
+.faq-list details > p { line-height: 1.85; }
+.final-cta .container { position: relative; }
+.final-cta h2 { font-size: clamp(48px, 6.6vw, 90px); }
+.final-cta p { color: #b3c5d5; line-height: 1.8; }
+.contact-number { display: inline-block; margin-top: 29px; color: #d7ecfc; font-size: clamp(24px, 3.4vw, 44px); font-weight: 450; letter-spacing: -.04em; text-decoration: none; font-variant-numeric: tabular-nums; }
+.contact-number:hover { text-decoration: underline; text-underline-offset: 8px; text-decoration-thickness: 1px; }
+.contact-actions { display: flex; justify-content: center; align-items: center; gap: 22px; margin-top: 23px; }
+.contact-actions .button { margin: 0; }
+.copy-number { display: inline-flex; align-items: center; gap: 9px; color: #bfd7e9; min-height: 44px; padding: 0 6px; font: inherit; font-size: 12px; background: none; border: 0; cursor: pointer; }
+.copy-number:hover { color: #e3f1fc; }
+.copy-number .icon { width: 15px; height: 15px; }
+.final-cta .copy-status { margin: 12px 0 0; min-height: 24px; font-size: 12px; }
+.plan-link { color: #abc7dc; font-size: 12px; min-height: 44px; justify-content: center; margin-top: 14px; }
+.cta-footnote { color: #8fa9bd; font-size: 11px; line-height: 1.7; }
+.footer-main nav a { min-height: 44px; display: inline-flex; align-items: center; gap: 7px; }
+.footer-bottom button { min-height: 44px; }
+.contact-dialog { width: min(560px, calc(100% - 28px)); }
+.dialog-close { top: 12px; right: 12px; z-index: 2; }
+#contact-intro > .eyebrow { display: block; max-width: 85%; line-height: 1.6; }
+#contact-form { margin-top: 25px; }
+#contact-form > label { display: block; margin: 17px 0 8px; font-size: 12px; }
+#contact-form > label > span { display: inline; font-weight: 400; color: #6e8191; }
+#contact-form input, #contact-form select, #contact-form textarea { margin: 0; width: 100%; font-size: 16px; padding: 12px 14px; background: #f9fbfd; color: #254561; border: 1px solid #c9d7e2; border-radius: 12px; }
+#contact-form input, #contact-form select { min-height: 48px; }
+#contact-form textarea { min-height: 76px; resize: vertical; }
+#contact-form .form-submit { width: 100%; min-height: 48px; font-size: 13px; margin-top: 18px; }
+.form-preview-note { font-size: 12px; line-height: 1.65; }
+.form-preview-note > .icon { flex-shrink: 0; width: 15px; height: 15px; }
+.plan-summary { margin: 25px 0; padding: 18px 21px; border: 1px solid #c8d9e6; border-radius: 16px; background: #e8f0f6; text-align: left; }
+.plan-summary dt { color: #567084; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; margin-top: 16px; }
+.plan-summary dt:first-child { margin-top: 0; }
+.plan-summary dd { color: #203e57; font-size: 14px; line-height: 1.65; margin: 5px 0 0; overflow-wrap: anywhere; white-space: pre-wrap; }
+.form-success .button { min-height: 48px; font-size: 13px; }
+.form-success .text-link { min-height: 44px; margin-top: 9px; font-size: 12px; }
+.privacy-dialog a { color: #254d70; text-decoration: underline; text-underline-offset: 3px; }
+.mobile-callbar { display: none; }
+.motion-toggle { min-width: 44px; min-height: 44px; }
+p { text-wrap: pretty; }
+
+/* Legibility floor: micro labels stay quiet, but never drop below a readable size. */
+.flow-copy .eyebrow, .experience-copy .eyebrow, .final-cta .eyebrow { font-size: 11px; letter-spacing: .13em; }
+.hero-eyebrow { font-size: 11px; letter-spacing: .14em; }
+.hero-specialties, .hero-bottom, .art-coordinate { font-size: 10px; }
+.art-caption, .art-caption-tail { font-size: 9.5px; }
+.signal-label { font-size: 9px; }
+.scene-topline, .scene-count, .scene-kicker, .scene-bottom, .ticket-top, .connection-tags span, .connection-timeline small { font-size: 9.5px; }
+.ticket-details small { font-size: 9px; letter-spacing: .06em; white-space: nowrap; }
+.scene-status, .ticket-confirmed { font-size: 11px; }
+.ticket-date div > span, .connection-head p, .connection-timeline p { font-size: 11px; }
+.ticket-details strong { font-size: 12px; }
+.product-label, .integration-step, .process-number, .integration-topline { font-size: 10.5px; }
+.demo-top { font-size: 11px; }
+.demo-tag, .integration-receipt small, .sector-tag, .workflow-step, .message-label { font-size: 10px; }
+.integration-mini-agent small, .integration-mini-tools span { font-size: 10px; }
+.example-note, .motion-toggle-label { font-size: 11px; }
+.footer-bottom, .footer-bottom button { font-size: 12px; }
+
+@media (max-width: 1100px) and (min-width: 681px) {
+  .flow-scene { height: 570px; }
+  .art-caption, .art-coordinate { right: 50px; }
+}
+@media (max-width: 1000px) and (min-width: 681px) {
+  .hero-description { font-size: 15px; }
+  .hero-contact { flex-wrap: wrap; gap: 3px 12px; }
+  .solution-card { min-height: 610px; padding-left: 26px; padding-right: 26px; }
+  .section-heading p, .solution-card p { font-size: 14px; }
+  .experience-grid { gap: 28px; }
+  .conversation-card { padding: 21px; }
+  .message { font-size: 11px; }
+}
+@media (max-width: 800px) {
+  .hero h1 { font-size: clamp(60px, 10vw, 80px); }
+  .hero-contact { justify-content: center; }
+  .hero-description { margin-left: auto; margin-right: auto; }
+}
+@media (max-width: 680px) {
+  html { scroll-padding-top: 90px; }
+  .hero { padding-top: 119px; }
+  .hero h1 { font-size: clamp(43px, 11.7vw, 68px); letter-spacing: -.052em; }
+  .hero-description { font-size: 14px; line-height: 1.8; max-width: 360px; margin-top: 23px; }
+  .hero-description br { display: none; }
+  .hero-buttons { gap: 17px; margin-top: 24px; }
+  .hero-buttons .button { min-height: 48px; padding: 14px 19px; font-size: 12px; }
+  .hero-watch { font-size: 11px; }
+  .hero-contact { font-size: 12px; flex-wrap: wrap; gap: 5px 12px; margin-top: 16px; }
+  .hero-specialties { margin-top: 24px; font-size: 9px; gap: 10px; letter-spacing: .08em; }
+  .hero-eyebrow { font-size: 9.5px; letter-spacing: .12em; margin-bottom: 24px; }
+  .hero-art { margin-top: 7px; }
+  .hero-bottom { font-size: 9px; }
+  .hero-bottom a { font-size: 9px; }
+  .flow-story { height: auto; }
+  .flow-sticky { padding-top: 74px; padding-bottom: 72px; }
+  .flow-copy .eyebrow { font-size: 10px; }
+  .flow-copy > p { font-size: 14px; line-height: 1.75; }
+  .chapter strong { font-size: 11px; }
+  .chapter > span { font-size: 10px; }
+  .chapter { min-height: 74px; }
+  .section-pad { padding: 74px 0; }
+  .section-heading .eyebrow, .sectors-top .eyebrow, .approach-heading .eyebrow, .faq-grid .eyebrow { font-size: 10px; }
+  .section-heading p, .solution-card p, .experience-copy > p, .approach-heading > p { font-size: 14px; }
+  .solution-card { min-height: 0; padding-bottom: 23px; }
+  .voice-card-visual { margin-bottom: 0; }
+  .integration-card-visual { margin-top: 23px; }
+  .more-strip p strong { font-size: 12px; }
+  .more-strip p > span { font-size: 12px; max-width: none; }
+  .experience-copy h2 { font-size: clamp(34px, 9.5vw, 43px); }
+  .experience-features strong { font-size: 13px; }
+  .experience-features > div > span { font-size: 12px; }
+  .conversation-card { padding: 22px 19px; }
+  .conversation-identity p { font-size: 12px; }
+  .demo-top { font-size: 10px; flex-wrap: wrap; gap: 9px; }
+  .demo-tag { font-size: 9px; }
+  .segmented-control button { font-size: 10px; min-height: 44px; }
+  .transcript { height: 350px; margin-top: 18px; padding-right: 6px; }
+  .message { font-size: 12px; }
+  .message-label { font-size: 9px; }
+  .demo-result { font-size: 11px; }
+  .demo-bottom > span { font-size: 10px; }
+  .integration-topline { font-size: 9px; }
+  .integration-path p, .integration-benefits p { font-size: 13px; }
+  .integration-disclaimer { font-size: 11px; }
+  .sector-story { min-height: 0; }
+  .sector-story-copy > p, .process-grid p, .faq-list details > p { font-size: 14px; }
+  .sector-controls button { font-size: 11px; padding: 11px 14px; }
+  .faq-list summary { font-size: 14px; }
+  .contact-number { font-size: clamp(25px, 7.2vw, 35px); margin-top: 25px; }
+  .contact-actions { gap: 21px; margin-top: 20px; }
+  .contact-actions .button { font-size: 12px; }
+  .final-cta { padding: 80px 0 70px; }
+  .final-cta h2 { font-size: clamp(42px, 11vw, 60px); letter-spacing: -.05em; }
+  .final-cta .eyebrow { font-size: 10px; letter-spacing: .1em; }
+  .final-cta p { font-size: 14px; }
+  .final-cta .copy-status { font-size: 11px; }
+  .plan-link { font-size: 12px; line-height: 1.7; max-width: 300px; margin: 12px auto 0; }
+  .cta-footnote { font-size: 11px; margin-top: 20px; }
+  .footer-main nav { flex-wrap: wrap; justify-content: flex-start; gap: 4px 24px; font-size: 12px; }
+  .footer-main > p { font-size: 11px; }
+  .footer-bottom, .footer-bottom button, .footer-bottom > span:nth-child(2) { font-size: 11px; }
+  .contact-dialog { padding: 31px 23px; max-height: calc(100dvh - 28px); }
+  .form-success h3 { font-size: 29px; }
+  .mobile-callbar { position: fixed; display: block; left: 14px; right: 14px; bottom: max(12px, env(safe-area-inset-bottom)); z-index: 44; border: 1px solid #afc9dd99; border-radius: 18px; background: #d5e9f8f5; box-shadow: 0 10px 40px #0004; backdrop-filter: blur(18px); }
+  .mobile-callbar a { min-height: 62px; display: flex; align-items: center; gap: 13px; padding: 11px 18px; color: #17374f; text-decoration: none; }
+  .mobile-callbar a > span { font-size: 13px; font-weight: 600; }
+  .mobile-callbar small { display: block; margin-top: 4px; font-size: 11px; font-weight: 400; letter-spacing: .035em; }
+  .mobile-callbar .icon:last-child { margin-left: auto; width: 18px; height: 18px; }
+  .callbar-visible .motion-toggle { bottom: calc(88px + env(safe-area-inset-bottom)); }
+  .scene-topline, .scene-count, .scene-kicker, .scene-bottom, .ticket-top, .art-coordinate, .art-caption, .art-caption-tail, .connection-tags span, .connection-timeline small, .ticket-details small, .signal-label { font-size: 8.5px; }
+  .scene-status, .ticket-confirmed, .ticket-date div > span, .connection-head p, .connection-timeline p { font-size: 10px; }
+  .ticket-details strong { font-size: 11px; }
+  .flow-scene { height: 530px; }
+  .product-label, .integration-step, .process-number, .sector-tag, .workflow-step, .message-label, .example-note { font-size: 9.5px; }
+}
+@media (max-width: 370px) {
+  .flow-scene { height: 550px; }
+  .hero-buttons { gap: 13px; }
+  .hero-buttons .button { padding: 13px 15px; font-size: 11px; }
+  .hero-watch { font-size: 10px; }
+  .hero-specialties { gap: 7px; font-size: 8px; letter-spacing: .05em; }
+  .hero-description { font-size: 13px; }
+  .hero-contact { flex-direction: column; }
+  .conversation-card { padding: 19px 15px; }
+  .contact-actions { gap: 15px; }
+  .copy-number { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .flow-story { height: auto; }
+  .flow-sticky { position: relative; height: auto; min-height: 0; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+html.motion-paused *, html.motion-paused *::before, html.motion-paused *::after { transition: none !important; }
+@media (prefers-reduced-transparency: reduce) {
+  .mobile-callbar { background: #d5e9f8; backdrop-filter: none; }
+}

@@ -58,7 +58,7 @@
     scrollFrame = 0;
     const y = scrollY;
     readProgress.style.transform = `scaleX(${clamp(y / scrollHeight)})`;
-    if (!compact.matches && !reduced.matches && !manualChapter) {
+    if (!compact.matches && !calm() && !manualChapter) {
       const progress = clamp((y - storyTop) / storyTravel);
       setChapter(Math.min(2, Math.floor(progress * 3)));
       sceneProgress.style.transform = `scaleX(${Math.max(.06, progress)})`;
@@ -91,18 +91,6 @@
     chapters[next].focus({ preventScroll: true });
     chapters[next].click();
   }));
-  // Subtle perspective settles into place as the workspace reaches the reader.
-  if (window.Motion && !reduced.matches) {
-    const workspace = $('.workspace-window');
-    const observer = new IntersectionObserver(entries => {
-      for (const entry of entries) if (entry.isIntersecting) {
-        if (!calm()) window.Motion.animate(workspace, { rotateX: [7, 0], y: [35, 0] }, { duration: 1.4, ease: [.19, 1, .22, 1] });
-        observer.disconnect();
-      }
-    }, { threshold: .16 });
-    observer.observe(workspace);
-  }
-
   const sectionObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => entry.target.classList.toggle('motion-outside', !entry.isIntersecting));
   }, { rootMargin: '100px' });
