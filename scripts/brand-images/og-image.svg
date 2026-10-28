@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d2236"/><stop offset=".6" stop-color="#091726"/><stop offset="1" stop-color="#091726"/></linearGradient>
+    <radialGradient id="glow" cx=".78" cy=".4" r=".55"><stop offset="0" stop-color="#376c98" stop-opacity=".55"/><stop offset="1" stop-color="#376c98" stop-opacity="0"/></radialGradient>
+    <linearGradient id="manta" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d5ebfa"/><stop offset=".55" stop-color="#6f9fc6"/><stop offset="1" stop-color="#376c98"/></linearGradient>
+    <linearGradient id="text" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e6f2fb"/><stop offset="1" stop-color="#8fbde0"/></linearGradient>
+    <symbol id="m" viewBox="0 0 160 128"><path d="M79 30C73 26 72 18 65 19C61 21 63 30 65 33C47 34 29 21 8 10C13 30 27 49 48 56C60 60 69 65 76 74C78 77 82 77 84 74C91 65 100 60 112 56C133 49 147 30 152 10C131 21 113 34 95 33C97 30 99 21 95 19C88 18 87 26 81 30Z"/><path d="M76 68C77 80 81 91 86 101C91 111 99 118 115 121C101 113 98 106 94 96C90 84 87 75 85 68Z"/></symbol>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(660 110) rotate(-8 280 224)"><use href="#m" width="560" height="448" fill="url(#manta)" opacity=".95"/></g>
+  <use href="#m" x="72" y="60" width="52" height="42" fill="#b3d9f3"/>
+  <text x="138" y="95" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="38" font-weight="600" letter-spacing="-1.8" fill="#f0f3f7">raygents<tspan font-size="14" dy="-16" dx="5" letter-spacing="0" fill="#b3d9f3">AI</tspan></text>
+  <g font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600" font-size="100" letter-spacing="-4">
+    <text x="70" y="290" fill="#f0f3f7">On the job.</text>
+    <text x="70" y="394" fill="url(#text)">Still booking.</text>
+  </g>
+  <g font-family="-apple-system, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" fill="#b7c6d4" letter-spacing="-.3">
+    <text x="74" y="462">AI receptionists that answer your calls and book visits,</text>
+    <text x="74" y="498">connected to the CRM you already use.</text>
+  </g>
+  <g font-family="-apple-system, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="2.4" fill="#8fb0c9">
+    <text x="74" y="572">CONSTRUCTION</text><circle cx="232" cy="567" r="2.5" fill="#5f86a6"/><text x="248" y="572">HVAC</text><circle cx="318" cy="567" r="2.5" fill="#5f86a6"/><text x="334" y="572">COMMERCIAL ROOFING</text>
+  </g>
+</svg>
