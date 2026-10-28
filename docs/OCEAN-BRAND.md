@@ -1,6 +1,5 @@
 # Avelqia — Deep Current
 
-Current visual direction, 13 October 2026. Supersedes the mineral/green palette in DESIGN-V2.md. Avelqia remains the working brand name. The site targets construction, HVAC, commercial roofing, and related trade businesses in the United States.
 
 ## Palette
 
@@ -12,7 +11,6 @@ Current visual direction, 13 October 2026. Supersedes the mineral/green palette 
 | Abyss navy | `#091726` | Hero and deep backgrounds |
 | Slate ink | `#16283C` | High contrast text on light backgrounds |
 
-The site alternates quiet grey product sections with deep navy feature sections. Glass surfaces use restrained blue tints. Supporting neutrals share the same cool hue family.
 
 ## Manta identity
 
@@ -40,7 +38,6 @@ Soft shafts of light move slowly behind the hero. Existing Motion and Lenis inte
 - Visually inspected desktop 1440 × 1000, tablet 768 × 1024, and mobile 390 × 844 / 320 × 812.
 - No document horizontal overflow at those inspected widths. The manta projection was adjusted to leave space around the wings on narrow phones.
 - Pause control updated its state and paused the underwater light animation; resume behavior was smoke-tested.
-- Roof-inquiry voice transcript, CRM site-visits filter, and mobile contact-dialog open/close were smoke-tested.
 - SVG fallback and reduced-motion branches were reviewed in source; a forced WebGL failure and a changed operating-system motion preference were not simulated.
 
 Voice/CRM content is illustrative. The contact form still produces a local downloadable brief until a real submission endpoint is configured. This update changes branding and presentation, not the production status of those services.

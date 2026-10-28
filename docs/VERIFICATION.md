@@ -2,7 +2,7 @@
 
 Histórico. Las comprobaciones del rediseño están en `VERIFICATION-V2.md`.
 
-13 de octubre de 2026. Navegador integrado de Codex, servido por HTTP local.
+13 de octubre de 2026. Navegador integrado, servido por HTTP local.
 
 Historia comprobada: un visitante entiende las dos ofertas, explora las demostraciones y crea un resumen de consulta. La landing no llama a un agente real ni a un CRM de producción.
 
@@ -44,14 +44,8 @@ Capturas: `artifacts/avelqia-desktop.jpg`, `artifacts/avelqia-mobile.jpg` y `art
 
 ## Publicación
 
-Site privado del propietario: https://avelqia-studio.mescuu.chatgpt.site
 
-Publicación confirmada por `save_version_and_deploy_private`: estado `succeeded`, sin mensaje de fallo. La verificación visual y funcional de esta nota se realizó en la versión local; el resultado nativo de Sites confirma que esa versión se publicó correctamente.
 
-- Project ID: `appgprj_6aceb1cf4908819182a03925af73478a`
 - Source commit: `914113af5d3a0191568b0af61a113d96c0dbc625`
-- Version ID: `appgprj_6aceb1cf4908819182a03925af73478a~appgver_c36870fe51408191b9a1ed0d9514ddba`
-- Deployment ID: `appgdep_6aceb223cbe08191830e08dfee70bdcc`
-- Archivo de publicación: `artifacts/avelqia-site.tar.gz`
 
 Se mantiene el acceso privado. El enlace requiere la cuenta del propietario.

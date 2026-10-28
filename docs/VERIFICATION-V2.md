@@ -1,6 +1,6 @@
 # Verificación — Avelqia / Flow v2
 
-13 de octubre de 2026. Verificación local por HTTP en el navegador integrado de Codex.
+13 de octubre de 2026. Verificación local por HTTP en un navegador integrado.
 
 ## Visual y responsive
 - Escritorio: 1440 × 1000.
@@ -36,14 +36,9 @@ Se implementan prefers-reduced-motion, prefers-reduced-transparency, contraste a
 - artifacts/avelqia-flow-story.jpg
 
 ## Publicación
-Confirmada por Sites con estado `succeeded`.
 
-- URL: https://avelqia-studio.mescuu.chatgpt.site
-- Project: appgprj_6aceb1cf4908819182a03925af73478a
+- URL: (URL privada del propietario, omitida)
 - Source commit: c14a95a86936a4a6e2b4f993da13f5dc24450b4c
-- Version: appgprj_6aceb1cf4908819182a03925af73478a~appgver_e2238d0291e48191bc103a5893f13541
-- Deployment: appgdep_6aceb85b210c81919aaeed77a4b79a73
-- Archive: artifacts/avelqia-v2-site.tar.gz
 - Acceso conservado: privado para el propietario.
 
 La versión publicada se abrió en el navegador: titular actualizado y render WebGL confirmado. La prueba funcional detallada se realizó en HTTP local.

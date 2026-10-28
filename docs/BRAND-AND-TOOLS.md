@@ -46,7 +46,7 @@ Las dependencias están instaladas mediante pnpm y fijadas en `pnpm-lock.yaml`. 
 - Repositorio: https://github.com/motiondivision/ai-kit
 - Servidor de documentación: https://mcp.motion.dev
 - La búsqueda de documentación y metadatos de ejemplos es gratuita. Otras funciones requieren Motion+.
-- Estado: investigado; no se ha cambiado la configuración global de Codex ni se ha activado este MCP. La librería Motion sí está instalada y funcionando en esta web.
+- Estado: investigado; no se ha activado este MCP. La librería Motion sí está instalada y funcionando en esta web.
 
 ### MCP de shadcn/ui
 

@@ -8,7 +8,7 @@ Búsquedas web exactas de Raygents, Raygents AI agents, Raygents software agency
 
 ### Dominios
 
-Consulta directa al registrador de Vercel:
+Consulta directa a un registrador de dominios:
 
 | Dominio | Resultado | Registro USD | Renovación USD |
 | --- | --- | --- | --- |
@@ -57,4 +57,4 @@ Recomendación: avanzar con Raygents como candidato preferido si se acepta .ai y
 
 ## Factibilidad técnica
 
-El cambio de nombre es sencillo en la landing actual: textos visibles, metadatos, accesibilidad, configuraciones y nombre de los archivos/briefs cuando corresponda. La manta, la paleta y las animaciones son reutilizables. La URL de Vercel requeriría una comprobación separada de disponibilidad; no se ha reservado raygents.vercel.app.
+El cambio de nombre es sencillo en la landing actual: textos visibles, metadatos, accesibilidad, configuraciones y nombre de los archivos/briefs cuando corresponda. La manta, la paleta y las animaciones son reutilizables.
